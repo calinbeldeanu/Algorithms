@@ -1,0 +1,42 @@
+Tema 1 - Beldeanu Calin-Victor 322CD
+
+1.Metoda de citire pentru cele 3 probleme :
+		Pentru citirea din fisiere am utilizat "Bufferedreader" deaorece este cea mai
+			rapida metoda de citire.
+			
+			
+2.Metoda de scriere in fisier pentru cele 3 probleme:
+		Pentru scrierea in fisier am utilizat "Bufferedwriter" , fiind tot asa ca la 
+			citire cea mai rapida metoda de scriere.
+			
+			
+3.Metoda "solution" pentru problema 1:
+		Am inceput rezolvarea problemei sortand intervalele dupa capatul din stanga in
+			ordine crescatoare.Dupa aceea iterativ am trecut prin intervale retinand un 
+			minim si un maxim. Verific toate intervalele pana cand capatul din stanga al
+			intervalelor depaseste valoarea minima apoi din intervalele cu capatul stanga
+			mai mic decat minimul local si il aleg pe cel mai lung. Fac lucrul acesta pana toate 
+			punctele au fost acoperite. 
+			
+			
+4. Metoda "solution" pentru problema 2:
+		Dupa ce am citit enuntul de mai multe ori pentru o solutie eficienta am ales sa 
+			rezolv problema utilizand programare dinamica . Am inceput cu un sir de comparat
+			apoi cu doua si tot asa. Prin programare dinamica se presupune umplerea unei matrici
+			cu 0 si 1 si verificarea in final daca ultimul element din matrice (colt-dreapta-jos)
+			este 1. Pentru matricea 2D se verifica in 2 directii . matricea o sa fie de lungimea
+			celor doua siruri +1 pentru a putea include punctul 0 0 in care vedem daca din sirul
+			vid se poate face un sir vid. Aceasta conditie o sa fie mereu adevarata. Apoi pentru 
+			fiecare element din matrice se verifica daca pe pozitia (ind -1) corespunde cu pozitia
+			din sirul final (i+j -1). Aceasta metoda se aplica si pentru celelalte tipuri de matrici
+			3D si 4D doar ca o sa fie mai multe conditii.
+			
+			
+5. Metoda "solution" pentru problema 3:
+		Aceasta problema din punctul meu de vedere a fost foarte simpla deoarece solutia abordata
+			a fost simpla de gandit cat si de implementat. Am retinut stropitorile intru-un vector
+			apoi le-am luat pe toate la rand si am verificat daca poate stropii in stanga si in dreapta.
+			Mai intai am verificat in stanga si apoi in dreapta . Am actualizat de fiecare data minimul
+			pentru a avea o valoare de referinta atunci cand verific in stanga.Singura problema pe care 
+			am avut-o a fost aceea ca la un moment dat daca foloseam variabile de tip int imi depasea 
+			valoarea maxima . Am schimbat in long si a mers foarte bine.
